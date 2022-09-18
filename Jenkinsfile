@@ -3,7 +3,7 @@ node {
   stage('clone repository') {
   }
   stage('Build image') {
-  app = docker.build("php")
+  app = docker.build("website")
   }
   stage('test image') {
     app.inside {
