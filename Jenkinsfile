@@ -3,7 +3,7 @@ node {
   stage('clone repository') {
   }
   stage('Build image') {
-  app = docker.build("website")
+  app = docker.build("swaccha/mongodb")
   }
   stage('test image') {
     app.inside {
